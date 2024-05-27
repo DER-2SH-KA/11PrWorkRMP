@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGround11"
+    tools:context=".WebMapActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:translationX="10dp"
+        android:onClick="onClickBackToStartPage"
+        android:background="@color/StepsViews"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/back_foreground"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
